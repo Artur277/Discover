@@ -1,0 +1,131 @@
+@media (max-width:1170px) {
+    .fav-item {
+        flex-direction: column;
+    }
+    .fav-item img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media(max-width:1000px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .logo {
+        margin: 20px 30px;
+    }
+    nav {
+        width: 100%;
+    }
+    nav li {
+        flex-grow: 1;
+    }
+    nav a {
+        padding:20px 0;
+        text-align: center;
+    }
+    .home {
+        padding: 50px 15px;
+    }
+    .home h1 {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .home p {
+        font-size: 20px;
+        margin-bottom: 35px;
+        line-height: 32px;
+    }
+    .service {
+        flex-direction: column;
+    }
+    .service-slider {
+        width: 100%;
+        height: 300px;
+    }
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+    .tours-container a {
+        flex: 0 32%;
+    }
+    .contacts-container {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        width: 50%;
+    }
+}
+
+
+@media(max-width:800px) {
+    .header-container {
+        flex-direction: space-between;
+    }
+    nav ul {
+        background: var(--mainColor);
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vw;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    nav ul.active {
+        transform: translateX(0);
+    }
+    nav li {
+        flex-grow: 0;
+    }
+    nav a {
+        color: var(--bg);
+    }
+    nav a:hover {
+        background: var(--textColor);
+    }
+    .mini-menu {
+    display: block;
+    }
+    .back {
+    display: block;
+    }
+    .fav-item {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    }
+    .fav-container {
+        flex-direction: column;
+    }
+    .favorable {
+        padding: 40px 0;
+    }
+    .serv-item {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+    .tours-container a {
+        flex: 0 49%;
+    }
+}
+@media (max-width: 600px) {
+    .fav-item {
+        flex-direction: column;
+    }
+    .fav-text {
+        padding: 0;
+    }
+    .tours-container a {
+        flex: 0 100%;
+    }
+}
+
+
+
